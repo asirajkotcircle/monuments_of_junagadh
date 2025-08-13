@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Junagadh - Ancient City of Gujarat | Heritage & History</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <link rel="stylesheet" href="index_updated.css">
-   
 </head>
 <body>
     <div class="scroll-indicator" id="scrollIndicator"></div>
     <div class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></div>
     
     <header class="header">
+        <div class="header-images">
+            
+            <img src="./logo.jpg" alt="Image 1" class="header-image" id="logo" >
+        </div>
+        
         <div class="container">
-            <h1 style="color: bisque;">Junagadh</h1>
-            <p class="subtitle">Ancient City of Gujarat • जूनागढ़ • જૂનાગઢ</p>
+            <h1 style="color: bisque;">Archaeological Survey of India</h1>
+            <p class="subtitle">Monuments of Junagadh • જૂનાગઢના સ્મારકો • जूनागढ़ के स्मारक </p>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h2 style="color: bisque;">ASI Rajkot Circle Welcomes You</h2>
-                
-                
-            </div>
+  <section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h2>ASI Rajkot Circle Welcomes You</h2>
         </div>
-    </section>
+    </div>
+</section>
 
     <div class="container">
         <div class="nav-tabs">
@@ -53,99 +55,116 @@
 
         <main class="main-content">
             <!-- History Tab -->
-         <div id="history" class="tab-content active" >
-  <h2 class="section-title">Historical Overview</h2>
+            <div id="history" class="tab-content active">
+                <h2 class="section-title">Historical Overview</h2>
+                
+                <!-- Monument Navigation -->
+                <div class="monument-nav">
+                    <button class="monument-btn active" data-monument="overview">Overview</button>
+                    <button class="monument-btn" data-monument="ashoka">Ashoka Rock Edicts</button>
+                   
+                    <button class="monument-btn" data-monument="baba-pyara">Baba Pyara Caves</button>
+                    <button class="monument-btn" data-monument="khapra-kodia">Khapra Kodia Caves</button>
+                    <button class="monument-btn" data-monument="buddhist">Buddhist Caves</button>
+                </div>
+                
+                <!-- Overview Section -->
+                <div id="overview-section" class="monument-section active">
+                    <section class="doc-text">
+                        <h3>Junagadh</h3>
+                        <p>Junagadh, literally meaning "Old Fort," is an ancient city in Saurashtra, Gujarat, India, with a history stretching back to pre-Christian times. It served as the capital of a princely state of the same name. Unlike much of the rocky and dry Saurashtra region, the area around Junagadh, specifically the Sorath division, is known for its lush vegetation and rich cultural vestiges. It is notably close to the Gir forests, the only natural habitat of the Asiatic lion.</p>
+                        <p>Junagadh has witnessed the influence of various imperial dynasties, including the Mauryan and Gupta empires, as well as local powers like the Maitrakas and external forces such as the Western Kshatrapas (Scythians) and later Rajput clans. In medieval times, it played a significant role as a Hindu power under the Chudasamas before being subjugated by Sultan Mahmud Beghara of the Ahmad Shahi line in 1470 A.D., after which it became a prominent Islamic state. For a period, it was even renamed Mustafabad.</p>
+                        <p>Throughout its history, Junagadh has been a melting pot of cultural traditions and religious trends. Monastic Buddhism, hieratic Jainism, renascent Brahmanism, and iconoclastic Islam have all flourished here. The city's prosperity was particularly prominent between the 1st and 6th centuries A.D.. It is also reputed to be the final abode of Neminatha, the 22nd Jain Tirthankara.</p>
+                    </section>
+                </div>
+                
+                <!-- Ashoka Rock Edicts Section -->
+                <div id="ashoka-section" class="monument-section">
+                    <section class="doc-text" id="ashoka-rock-edicts">
+                        <h3>Ashoka Rock Edicts</h3>
+                        <p>The renowned fourteen edicts of Emperor Ashoka (Priyadarsi Raja), the third ruler of the Mauryan line (c. 273 B.C.), are meticulously engraved on a rounded granite boulder on the northeast face of Girnar Hill, near the entrance to the valley in Junagadh. This site is particularly significant as it also bears two more crucial epigraphs from later distinguished rulers: Mahakshatrapa Rudradaman I and Skandagupta.</p>
+                        <p>Ashoka's inscriptions at Junagadh, first reported in 1822, mark the beginning of Junagadh's known history. These edicts reflect Ashoka's profound moral transformation after the Kalinga War, leading him to abandon military conquest (Digvijaya) for the path of piety and love (Dharmavijaya). His teachings, known as Dharma, emphasized non-violence, charity, reverence for elders and monks of all religions, tolerance, self-control, and compassion.</p>
+                        <p>The Junagadh edicts are composed in the Prakrit dialect, specifically a western type resembling that of Ujjain, the administrative center for Saurashtra, though it contains many 'Magadhi' words. The script used is Brahmi, which is the mother of most existing Indian scripts. The edicts cover various aspects of his Dharma:</p>
 
-  <section class="doc-text">
-    <h3>Junagadh</h3>
-    <p>Junagadh, literally meaning "Old Fort," is an ancient city in Saurashtra, Gujarat, India, with a history stretching back to pre-Christian times. It served as the capital of a princely state of the same name. Unlike much of the rocky and dry Saurashtra region, the area around Junagadh, specifically the Sorath division, is known for its lush vegetation and rich cultural vestiges. It is notably close to the Gir forests, the only natural habitat of the Asiatic lion.</p>
-    <p>Junagadh has witnessed the influence of various imperial dynasties, including the Mauryan and Gupta empires, as well as local powers like the Maitrakas and external forces such as the Western Kshatrapas (Scythians) and later Rajput clans. In medieval times, it played a significant role as a Hindu power under the Chudasamas before being subjugated by Sultan Mahmud Beghara of the Ahmad Shahi line in 1470 A.D., after which it became a prominent Islamic state. For a period, it was even renamed Mustafabad.</p>
-    <p>Throughout its history, Junagadh has been a melting pot of cultural traditions and religious trends. Monastic Buddhism, hieratic Jainism, renascent Brahmanism, and iconoclastic Islam have all flourished here. The city's prosperity was particularly prominent between the 1st and 6th centuries A.D.. It is also reputed to be the final abode of Neminatha, the 22nd Jain Tirthankara.</p>
-  </section>
+                        <h4>The Edicts Include:</h4>
+                        <ul>
+                            <li><strong>Edict I:</strong> Prohibits the slaughter of living beings for sacrifice and condemns futile festivities, while endorsing gatherings promoting love. Ashoka himself reduced the daily slaughter of animals in the royal kitchen.</li>
+                            <li><strong>Edict II:</strong> Details the provision of medical treatment for humans and animals across his empire and neighboring kingdoms, including the planting of medicinal herbs and the establishment of wells and avenue trees along highways.</li>
+                            <li><strong>Edict III:</strong> Promulgated in the 12th year of his reign, it directs officials to undertake quinquennial tours to propagate the Royal Dharma, which includes obedience to parents, generosity to friends, relatives, Brahmins, and monks, abstention from killing, and economic living.</li>
+                            <li><strong>Edict IV:</strong> Dated in the 12th year, it elaborates on Edict III, noting an improvement in his subjects' conduct due to the proclamation of Dharma, transforming "Bherighosa" (battle cry) into "Dharma Ghosa" (slogans of Dharma).</li>
+                            <li><strong>Edict V:</strong> From the 13th year, it details the institution of Dharma Mahamatras, special officials responsible for promoting Dharma across religious sects, caring for various communities, aiding the downtrodden, and rehabilitating offenders.</li>
+                            <li><strong>Edict VI:</strong> Ashoka declares that he is always accessible to his officials and people—day or night—to hear their concerns. He emphasizes swift and fair justice, and his readiness to correct mistakes in governance. Reflects his commitment to moral and responsible rule, guided by Dhamma (ethical conduct).</li>
+                            <li><strong>Edict VII:</strong> Ashoka explains that Dhamma is for people of all religions and cultures. He highlights the spread of Dhamma even to foreign lands, including Greek kingdoms. Encourages compassion, self-control, and truthfulness, over rituals.</li>
+                            <li><strong>Edict VIII:</strong> Ashoka describes his transformation after adopting Dhamma (righteousness). Previously, he used to go on hunting and pleasure tours, but now he undertakes Dhamma Yatras (pilgrimages) to meet people, discuss morality, and spread ethical values like compassion, non-violence, and proper behavior. This marks a clear shift in royal duty—from conquest to moral leadership.</li>
+                            <li><strong>Edict IX:</strong> Ashoka criticizes meaningless rituals and ceremonies, especially those performed during birth, marriage, or death. He emphasizes that true religious behavior is not in rituals but in practicing kindness, respect to elders, generosity to Brahmanas and Sramanas, and compassion towards animals.</li>
+                            <li><strong>Edict X:</strong> Ashoka declares that glory and fame based on conquest and wealth are insignificant compared to the glory achieved through the promotion of Dhamma. He wants to be remembered not for his imperial power but for the moral welfare he brought to his people.</li>
+                            <li><strong>Edict XI:</strong> This edict emphasizes that Dhamma is the greatest gift. Providing food or gifts is good, but imparting moral teachings, encouraging non-violence, and guiding people in righteous conduct is considered the noblest form of giving.</li>
+                            <li><strong>Edict XII:</strong> Ashoka urges mutual respect among different sects and religions. He condemns unnecessary criticism of others' beliefs and stresses that harmony can only be achieved through mutual understanding. This is one of the earliest appeals for religious tolerance in recorded history.</li>
+                            <li><strong>Edict XIII:</strong> This is the most emotional and historically significant edict. Ashoka expresses deep remorse over the Kalinga War, where over 100,000 were killed. It marks his complete transformation towards non-violence (Ahimsa) and peaceful diplomacy.</li>
+                            <p><strong>Mention of Sudarsana Lake:</strong> This ancient reservoir, built during the Mauryan period and later repaired by rulers Rudradaman I and Skandagupta, is referenced as part of public welfare works by Ashoka.</p>
+                            <li><strong>Edict XIV:</strong> This concluding edict declares that multiple versions of these Dhamma instructions were inscribed throughout the empire, tailored to local languages and customs. It highlights Ashoka's desire to communicate moral values across cultural boundaries, ensuring the message of peace and ethical conduct reached all.</li>
+                        </ul>
 
-  <section class="doc-text">
-    <h3>Ashoka Rock Edicts</h3>
-    <p>The renowned fourteen edicts of Emperor Ashoka (Priyadarsi Raja), the third ruler of the Mauryan line (c. 273 B.C.), are meticulously engraved on a rounded granite boulder on the northeast face of Girnar Hill, near the entrance to the valley in Junagadh. This site is particularly significant as it also bears two more crucial epigraphs from later distinguished rulers: Mahakshatrapa Rudradaman I and Skandagupta.</p>
-    <p>Ashoka's inscriptions at Junagadh, first reported in 1822, mark the beginning of Junagadh's known history. These edicts reflect Ashoka's profound moral transformation after the Kalinga War, leading him to abandon military conquest (Digvijaya) for the path of piety and love (Dharmavijaya). His teachings, known as Dharma, emphasized non-violence, charity, reverence for elders and monks of all religions, tolerance, self-control, and compassion.</p>
-    <p>The Junagadh edicts are composed in the Prakrit dialect, specifically a western type resembling that of Ujjain, the administrative center for Saurashtra, though it contains many 'Magadhi' words. The script used is Brahmi, which is the mother of most existing Indian scripts. The edicts cover various aspects of his Dharma:</p>
+                    </section>
+                    <!-- Skandagupta's Inscription Section -->
+            
+                <section class="doc-text" id="Skandagupta's_Inscription">
+                    <h3>Skandagupta's Inscription</h3>
+                    <p>Skandagupta, the last emperor of the Imperial Gupta line, also left his mark on the Girnar rock. His inscription, the third on the boulder, records the actions of his Governor Parnadatta and Parnadatta's son Chakrapalita, the local magistrate. They took swift measures to repair the embankment on the slopes of Girnar Hill, which had been damaged by heavy rains, restoring it to its original condition and utility. This inscription highlights the Gupta rule over Saurashtra and their administrative efforts in maintaining public works.</p>
+                    <p>By the 5th century CE, the mighty Gupta Empire was crumbling. The Huns were invading from the northwest, and Skandagupta, the last great Gupta ruler, was fighting to hold his kingdom together. Amidst this chaos, a disaster struck Junagadh – <strong>the Sudarshan Lake, built by Chandragupta Maurya's governor 800 years earlier, had burst its embankments after torrential rains</strong>.</p>
+                    <p><strong>The Inscription's Dramatic Account</strong></p>
+                    <p>Skandagupta's inscription, carved just below Ashoka's edicts, reads like an ancient engineering report: <br>
+                    <i>"The embankment, constructed by the Vaishya Pushyagupta, governor of Chandragupta Maurya, and later repaired by the Yavana king Tushaspha under Ashoka, was shattered by the fury of the rains. The people were in distress. Then Chakrapalita, the son of Parnadatta (Skandagupta's governor), restored the dam to its former glory."</i></p>
+                </section>
+            
+                    <!-- End of Skandagupta's Inscription Section -->
+                </div>
+                
+                
+                
+                <!-- Baba Pyara Caves Section -->
+                <div id="baba-pyara-section" class="monument-section">
+                    <section class="doc-text" id="Baba_Pyara_Caves">
+                        <h3>Baba Pyara Caves</h3>
+                        <p>The Baba Pyara Caves are a significant group of Buddhist rock-hewn caves in Junagadh, protected by the Central Archaeological Department. This significant group of Buddhist rock-hewn caves presents remarkable architectural features. Within the complex, Cave No. 1 notably features a distinctive Chaitya carving on its facade. Caves No. 3 and No. 7 are adorned with intricately carved relief figures on their door lintels and jambs, showcasing the artistic skill of the period. The discovery of a fragmentary Saka inscription near Cave No. 5 adds another layer of historical intrigue, hinting at the interactions and influences across different eras at this site. The caves, believed to date back to the 2nd-3rd century A.D., served as monastic dwellings and meditation spaces, reflecting the spread of Buddhism in Western India.</p>
 
-    <h4>The Edicts Include:</h4>
-    <ul>
-      <li><strong>Edict I:</strong> Prohibits the slaughter of living beings for sacrifice and condemns futile festivities, while endorsing gatherings promoting love. Ashoka himself reduced the daily slaughter of animals in the royal kitchen.</li>
-      <li><strong>Edict II:</strong> Details the provision of medical treatment for humans and animals across his empire and neighboring kingdoms, including the planting of medicinal herbs and the establishment of wells and avenue trees along highways.</li>
-      <li><strong>Edict III:</strong> Promulgated in the 12th year of his reign, it directs officials to undertake quinquennial tours to propagate the Royal Dharma, which includes obedience to parents, generosity to friends, relatives, Brahmins, and monks, abstention from killing, and economic living.</li>
-      <li><strong>Edict IV:</strong> Dated in the 12th year, it elaborates on Edict III, noting an improvement in his subjects' conduct due to the proclamation of Dharma, transforming "Bherighosa" (battle cry) into "Dharma Ghosa" (slogans of Dharma).</li>
-      <li><strong>Edict V:</strong> From the 13th year, it details the institution of Dharma Mahamatras, special officials responsible for promoting Dharma across religious sects, caring for various communities, aiding the downtrodden, and rehabilitating offenders.</li>
-      <li><strong>Edict VI:</strong> Ashoka declares that he is always accessible to his officials and people—day or night—to hear their concerns. He emphasizes swift and fair justice, and his readiness to correct mistakes in governance. Reflects his commitment to moral and responsible rule, guided by Dhamma (ethical conduct).</li>
-      <li><strong>Edict VII:</strong> Ashoka explains that Dhamma is for people of all religions and cultures. He highlights the spread of Dhamma even to foreign lands, including Greek kingdoms. Encourages compassion, self-control, and truthfulness, over rituals.</li>
-      <li><strong>Edict VIII:</strong> Ashoka describes his transformation after adopting Dhamma (righteousness). Previously, he used to go on hunting and pleasure tours, but now he undertakes Dhamma Yatras (pilgrimages) to meet people, discuss morality, and spread ethical values like compassion, non-violence, and proper behavior. This marks a clear shift in royal duty—from conquest to moral leadership.   </li>
-      <li><strong>Edict IX:</strong> Ashoka criticizes meaningless rituals and ceremonies, especially those performed during birth, marriage, or death. He emphasizes that true religious behavior is not in rituals but in practicing kindness, respect to elders, generosity to Brahmanas and Sramanas, and compassion towards animals.</li>
-      <li><strong>Edict X:</strong> Ashoka declares that glory and fame based on conquest and wealth are insignificant compared to the glory achieved through the promotion of Dhamma. He wants to be remembered not for his imperial power but for the moral welfare he brought to his people.</li>
-
-      <li><strong>Edict XI:</strong> This edict emphasizes that Dhamma is the greatest gift. Providing food or gifts is good, but imparting moral teachings, encouraging non-violence, and guiding people in righteous conduct is considered the noblest form of giving.</li>
-
-      <li><strong>Edict XII:</strong> Ashoka urges mutual respect among different sects and religions. He condemns unnecessary criticism of others' beliefs and stresses that harmony can only be achieved through mutual understanding. This is one of the earliest appeals for religious tolerance in recorded history.</li>
-
-      <li><strong>Edict XIII:</strong>This is the most emotional and historically significant edict. Ashoka expresses deep remorse over the Kalinga War, where over 100,000 were killed. It marks his complete transformation towards non-violence (Ahimsa) and peaceful diplomacy.</li>
-      <p><strong>Mention of Sudarsana Lake:</strong> This ancient reservoir, built during the Mauryan period and later repaired by rulers Rudradaman I and Skandagupta, is referenced as part of public welfare works by Ashoka.</p>
-      <li><strong>Edict XIV:</strong> This concluding edict declares that multiple versions of these Dhamma instructions were inscribed throughout the empire, tailored to local languages and customs. It highlights Ashoka's desire to communicate moral values across cultural boundaries, ensuring the message of peace and ethical conduct reached all.</li>
-    </ul>
-
-  </section>
-
-  <section class="doc-text">
-    <h3>Skandagupta's Inscription</h3>
-    <p>Skandagupta, the last emperor of the Imperial Gupta line, also left his mark on the Girnar rock. His inscription, the third on the boulder, records the actions of his Governor Parnadatta and Parnadatta's son Chakrapalita, the local magistrate. They took swift measures to repair the embankment on the slopes of Girnar Hill, which had been damaged by heavy rains, restoring it to its original condition and utility. This inscription highlights the Gupta rule over Saurashtra and their administrative efforts in maintaining public works.</p>
-    <p>By the 5th century CE, the mighty Gupta Empire was crumbling. The Huns were invading from the northwest, and Skandagupta, the last great Gupta ruler, was fighting to hold his kingdom together. Amidst this chaos, a disaster struck Junagadh – <strong>the Sudarshan Lake, built by Chandragupta Maurya’s governor 800 years earlier, had burst its embankments after torrential rains</strong>.
-    </p>
-    <p><strong>The Inscription’s Dramatic Account</strong></p>
-    <p>Skandagupta’s inscription, carved just below Ashoka’s edicts, reads like an ancient engineering report: <br>
-    <i>"The embankment, constructed by the Vaishya Pushyagupta, governor of Chandragupta Maurya, and later repaired by the Yavana king Tushaspha under Ashoka, was shattered by the fury of the rains. The people were in distress. Then Chakrapalita, the son of Parnadatta (Skandagupta’s governor), restored the dam to its former glory."</i></p>
-
-  </section>
-
-  <section class="doc-text">
-    <h3>Baba Pyara Caves</h3>
-    <p>The Baba Pyara Caves are a significant group of Buddhist rock-hewn caves in Junagadh, protected by the Central Archaeological Department. This significant group of Buddhist rock-hewn caves presents remarkable architectural features. Within the complex, Cave No. 1 notably features a distinctive Chaitya carving on its facade. Caves No. 3 and No. 7 are adorned with intricately carved relief figures on their door lintels and jambs, showcasing the artistic skill of the period. The discovery of a fragmentary Saka inscription near Cave No. 5 adds another layer of historical intrigue, hinting at the interactions and influences across different eras at this site. The caves, believed to date back to the 2nd-3rd century A.D., served as monastic dwellings and meditation spaces, reflecting the spread of Buddhism in Western India.</p>
-
-    <ul type="none">
-        <p>The complex comprises 13 individual caves, arranged across three intersecting tiers or lines:</p>
-        <li><strong>Northern Group - <i>Caves 1 through 4</i></strong>  
-Four south-facing monastic chambers forming the upper tier, each with a small inner hall and verandah, carved into a 45 m high rock face. 
-        </li>
-         <li><strong>South-Eastern Group - <i>Caves 5 through 11</i></strong>  
-This expanded second tier includes a <b>spacious courtyard and an apsidal Chaitya hall </b> flanked by meditation cells that reflect Satavahana-era architectural influences—pillars with lion brackets, horseshoe chaitya windows, and symbolic motifs on door lintels and jambs. 
-        </li>
-           <li><strong>Third (Rear) Group – <i>Caves 12 through 13 (and possibly up to 16 as marked in Salomon’s shell-cipher surveys)</i></strong>  
-These caves lie west-north-west of the second tier and include a larger central chamber, connecting cells, and at least two known <b>shell-inscription panels</b> on cave no. 12. One uses the unique Jain term <b>kevalajñāna</b>, establishing Jain usage in one phase, along with auspicious symbols like Swastika, Nandhyavarta, Darpan, Meen Yugal, and Purna Ghata above doorframes—attributed to Jain occupancy by H. D. Sankalia 
-        </li>
-    </ul>
-
-  </section>
-
-
-  <!-- Khapra Kodia Caves -->
-  <section class="doc-text">
-    <h3>Khapra Kodia Caves</h3>
-    <p>Another group of Buddhist rock-hewn caves protected by the Central Archaeological Department is the Khapra Kodia Caves in Junagadh. These caves offer a glimpse into ancient monastic life, with remnants of first-floor pillars visible. Inscriptions and terracotta figurines have been discovered from the walls and debris clearance around the caves. An Islamic inscription was also found on their walls, indicating later historical interactions at the site.</p>
-    <p>Carved into granite at the <b>northern base of Uparkot Fort</b>, bordering the ancient (now vanished) <b>Sudarshan Lake</b>, the <b>Khapra Kodia Caves</b>—also called <i>Khangar Mahal</i>—are the oldest among Junagadh’s Buddhist cave group.</p>
-    <p><b>Dating & Monastic Use:</b>  These monastic chambers date to the <b>3rd–4th century BCE</b>, during Emperor <b>Ashoka’s reign</b>, making them some of the earliest Buddhist retreats in western India Emaciated cells and water cisterns suggest a setup for monks during the <b>vassa (monsoon)</b> season, living austerely within these rock-cut cells.</p>
-    <p><b>Layout & Architecture:</b> The caves are arranged along an <b>east–west longitudinal ridge</b>, with an <b>L-shaped wing</b> on the western side housing residential cells and a distinctive <b>grid of stone-lined water tanks</b> serving daily needs—an ingenious rainwater management system matched by few contemporaries Over decades, cracks developed in the roof, causing seepage and prompting monks to abandon the site—some reportedly migrated to <b>Maharashtra</b>, where they created more elaborate cave systems </p>
-    <p><b>Current Condition: </b> Subsequent <b>quarrying</b> damaged these caves, leaving only the <b>uppermost storey</b>  intact for modern visitors Despite its weathered simplicity, the Khapra Kodia Caves remain a testament to early rock cut Buddhist architecture and Junagadh’s ancient spiritual heritage.</p>
-  </section>
-  <section class="doc-text">
-    <h3>Buddhist Caves (Uperkot Group)</h3>
-    <p>Beyond the Baba Pyara and Khapra Kodia groups, there are other important "Buddhistic Caves" on the Uperkot, also protected by the Central Archaeological Department. Excavations in these caves have revealed interesting details, such as a vertical rock-cut channel in Cave No. 1 and female couples carved on the Chaitya windows. The Uperkot Buddhist Caves also feature an ornate rock-cut lower hall with detailed columns. Archaeological findings from the roof of these caves include coins of Rudrasena III and Rudrasimha III, a silver coin of Bhartrdaman, a bronze pot, terracotta figurines, and clay bullae with Yaksha figures and Kshatrapa ruler heads, providing valuable insights into the period </p>
-    <p>Carved into the rocky slopes beneath Uparkot Fort in three levels, the Junagadh Buddhist Cave Complex served as monastic dwellings between the 2nd–5th centuries CE, capturing the transformation of early Buddhist life into evolving architectural expression  . This ensemble includes the Khapra Kodiya, Baba Pyara, and Uparkot caves, all excavated in living rock beyond the fort’s eastern moat  . </p> 
-    <p><b>Upper tier:</b> Features vaulted chambers and a central open kunda (tank) encircled by verandahs used for meditation and quiet reflection. The decorative “kakshasana” bench style seating enhanced spiritual contemplation  .</p>
-    <p><b>Lower tier:</b> Comprises meditation cells, corridors and finely carved pillars whose base, shaft, and capital combine motifs influenced by Graeco-Scythian and Satavahana art, evoking a stylistic synthesis of cultures. </p>
-<p>The complex showcases exemplary horseshoe-shaped chaitya window carvings above stone benches, along with ornamented pillared halls—each element reflecting purposeful design for communal worship and solitude alike  . Excavations above the top tier revealed pottery and coins from the 3rd–4th centuries, offering crucial insights into the chronological framework of the site  . </p>
-<p>Together, the three cave groups form a rich tapestry in rock: Khapra Kodiya represents austere monastic beginnings; Baba Pyara reflects structural and symbolic sophistication; and the Uparkot caves exhibit architectural maturity. They bear clear evidence of Buddhism’s deep roots in Saurashtra and remain preserved under the Archaeological Survey of India as a cherished spiritual and historical legacy.
-</p>
-
-  </section>
-</div>
-
+                        <ul type="none">
+                            <p>The complex comprises 13 individual caves, arranged across three intersecting tiers or lines:</p>
+                            <li><strong>Northern Group - <i>Caves 1 through 4</i></strong>  
+                        Four south-facing monastic chambers forming the upper tier, each with a small inner hall and verandah, carved into a 45 m high rock face.</li>
+                            <li><strong>South-Eastern Group - <i>Caves 5 through 11</i></strong>  
+                        This expanded second tier includes a <b>spacious courtyard and an apsidal Chaitya hall </b> flanked by meditation cells that reflect Satavahana-era architectural influences—pillars with lion brackets, horseshoe chaitya windows, and symbolic motifs on door lintels and jambs.</li>
+                            <li><strong>Third (Rear) Group – <i>Caves 12 through 13 (and possibly up to 16 as marked in Salomon's shell-cipher surveys)</i></strong>  
+                        These caves lie west-north-west of the second tier and include a larger central chamber, connecting cells, and at least two known <b>shell-inscription panels</b> on cave no. 12. One uses the unique Jain term <b>kevalajñāna</b>, establishing Jain usage in one phase, along with auspicious symbols like Swastika, Nandhyavarta, Darpan, Meen Yugal, and Purna Ghata above doorframes—attributed to Jain occupancy by H. D. Sankalia.</li>
+                        </ul>
+                    </section>
+                </div>
+                
+                <!-- Khapra Kodia Caves Section -->
+                <div id="khapra-kodia-section" class="monument-section">
+                    <section class="doc-text" id="Khapra_Kodia_Caves">
+                        <h3>Khapra Kodia Caves</h3>
+                        <p>Another group of Buddhist rock-hewn caves protected by the Central Archaeological Department is the Khapra Kodia Caves in Junagadh. These caves offer a glimpse into ancient monastic life, with remnants of first-floor pillars visible. Inscriptions and terracotta figurines have been discovered from the walls and debris clearance around the caves. An Islamic inscription was also found on their walls, indicating later historical interactions at the site.</p>
+                        <p>Carved into granite at the <b>northern base of Uparkot Fort</b>, bordering the ancient (now vanished) <b>Sudarshan Lake</b>, the <b>Khapra Kodia Caves</b>—also called <i>Khangar Mahal</i>—are the oldest among Junagadh's Buddhist cave group.</p>
+                        <p><b>Dating & Monastic Use:</b> These monastic chambers date to the <b>3rd–4th century BCE</b>, during Emperor <b>Ashoka's reign</b>, making them some of the earliest Buddhist retreats in western India. Emaciated cells and water cisterns suggest a setup for monks during the <b>vassa (monsoon)</b> season, living austerely within these rock-cut cells.</p>
+                        <p><b>Layout & Architecture:</b> The caves are arranged along an <b>east–west longitudinal ridge</b>, with an <b>L-shaped wing</b> on the western side housing residential cells and a distinctive <b>grid of stone-lined water tanks</b> serving daily needs—an ingenious rainwater management system matched by few contemporaries. Over decades, cracks developed in the roof, causing seepage and prompting monks to abandon the site—some reportedly migrated to <b>Maharashtra</b>, where they created more elaborate cave systems.</p>
+                        <p><b>Current Condition:</b> Subsequent <b>quarrying</b> damaged these caves, leaving only the <b>uppermost storey</b> intact for modern visitors. Despite its weathered simplicity, the Khapra Kodia Caves remain a testament to early rock cut Buddhist architecture and Junagadh's ancient spiritual heritage.</p>
+                    </section>
+                </div>
+                
+                <!-- Buddhist Caves Section -->
+                <div id="buddhist-section" class="monument-section">
+                    <section class="doc-text" id="Buddhist_Caves">
+                        <h3>Buddhist Caves (Uperkot Group)</h3>
+                        <p>Beyond the Baba Pyara and Khapra Kodia groups, there are other important "Buddhistic Caves" on the Uperkot, also protected by the Central Archaeological Department. Excavations in these caves have revealed interesting details, such as a vertical rock-cut channel in Cave No. 1 and female couples carved on the Chaitya windows. The Uperkot Buddhist Caves also feature an ornate rock-cut lower hall with detailed columns. Archaeological findings from the roof of these caves include coins of Rudrasena III and Rudrasimha III, a silver coin of Bhartrdaman, a bronze pot, terracotta figurines, and clay bullae with Yaksha figures and Kshatrapa ruler heads, providing valuable insights into the period.</p>
+                        <p>Carved into the rocky slopes beneath Uparkot Fort in three levels, the Junagadh Buddhist Cave Complex served as monastic dwellings between the 2nd–5th centuries CE, capturing the transformation of early Buddhist life into evolving architectural expression. This ensemble includes the Khapra Kodiya, Baba Pyara, and Uparkot caves, all excavated in living rock beyond the fort's eastern moat.</p>
+                        <p><b>Upper tier:</b> Features vaulted chambers and a central open kunda (tank) encircled by verandahs used for meditation and quiet reflection. The decorative "kakshasana" bench style seating enhanced spiritual contemplation.</p>
+                        <p><b>Lower tier:</b> Comprises meditation cells, corridors and finely carved pillars whose base, shaft, and capital combine motifs influenced by Graeco-Scythian and Satavahana art, evoking a stylistic synthesis of cultures.</p>
+                        <p>The complex showcases exemplary horseshoe-shaped chaitya window carvings above stone benches, along with ornamented pillared halls—each element reflecting purposeful design for communal worship and solitude alike. Excavations above the top tier revealed pottery and coins from the 3rd–4th centuries, offering crucial insights into the chronological framework of the site.</p>
+                        <p>Together, the three cave groups form a rich tapestry in rock: Khapra Kodiya represents austere monastic beginnings; Baba Pyara reflects structural and symbolic sophistication; and the Uparkot caves exhibit architectural maturity. They bear clear evidence of Buddhism's deep roots in Saurashtra and remain preserved under the Archaeological Survey of India as a cherished spiritual and historical legacy.</p>
+                    </section>
+                </div>
+            </div>
 
             <!-- Bibliography Tab -->
            <div id="bibliography" class="tab-content">
@@ -154,202 +173,193 @@ These caves lie west-north-west of the second tier and include a larger central 
 
     <div class="bibliography-list">
         <div class="bibliography-item">
-            <div class="author">Dhammika, Shravasti</div>
-            <div class="title">The Edicts of King Asoka</div>
-            <div class="publication">Buddhist Publication Society, Kandy, 1993</div>
+            <div class="author">E.Hultzsch </div>
+            <div class="title">Corpus Inscriptionum Indicarum Vol. I - Inscriptions of Asoka</div>
+            <div class="publication">1925</div>
         </div>
 
         <div class="bibliography-item">
-            <div class="author">Sankalia, H.D.</div>
-            <div class="title">The Archaeology of Gujarat</div>
-            <div class="publication">Popular Prakashan, Bombay, 1941</div>
+            <div class="author"> D.C.Sircar</div>
+            <div class="title">Select Inscriptions bearing on Indian History & Civilization</div>
+            <div class="publication">1942</div>
         </div>
 
         <div class="bibliography-item">
-            <div class="author">Burgess, James</div>
-            <div class="title">Report on the Antiquities of Kathiawad and Kachh</div>
-            <div class="publication">Archaeological Survey of Western India, Volume II, 1876</div>
+            <div class="author">Burgess</div>
+            <div class="title">Archaeological Survey of Western India Vol. II - Monuments in Kathiawar and Cutch</div>
+            <div class="publication">1876</div>
+        </div>
+
+
+        <div class="bibliography-item">
+            <div class="author">Percy Brown</div>
+            <div class="title">Indian Architecture (2 Vols.)</div>
+            <div class="publication">1946 & 1956</div>
         </div>
 
         <div class="bibliography-item">
-            <div class="author">Fleet, J.F.</div>
-            <div class="title">Inscriptions of the Early Gupta Kings and their Successors</div>
-            <div class="publication">Corpus Inscriptionum Indicarum, Volume III, 1888</div>
+            <div class="author">M.S.Commissariat</div>
+            <div class="title">History of Gujarat (2 Vols.)</div>
+            <div class="publication">1938, 1957</div>
         </div>
 
         <div class="bibliography-item">
-            <div class="author">Majumdar, R.C.</div>
-            <div class="title">The Classical Age</div>
-            <div class="publication">Bharatiya Vidya Bhavan, History and Culture of the Indian People, Volume III, 1954</div>
+            <div class="author">Various Authors</div>
+            <div class="title">Epigraphia Indica - Arabic & Persian Supplement</div>
+            <div class="publication">1953-54</div>
         </div>
 
         <div class="bibliography-item">
-            <div class="author">Archaeological Survey of India</div>
-            <div class="title">Annual Report of the Archaeological Survey of India</div>
-            <div class="publication">Various volumes covering excavations at Junagadh, 1902-present</div>
-        </div>
-
-        <div class="bibliography-item">
-            <div class="author">Lüders, Heinrich</div>
-            <div class="title">A List of Brahmi Inscriptions</div>
-            <div class="publication">Archaeological Survey of India, New Imperial Series, Volume X, 1912</div>
-        </div>
-
-        <div class="bibliography-item">
-            <div class="author">Salomon, Richard</div>
-            <div class="title">Indian Epigraphy: A Guide to the Study of Inscriptions in Sanskrit, Prakrit, and the other Indo-Aryan Languages</div>
-            <div class="publication">Oxford University Press, 1998</div>
+            <div class="author">E.J.Rapson</div>
+            <div class="title">Catalogue of the coins of the Andhra dynasty, the Western Kshatrapas, The Traikutaka dynasty & Bodhi dynasty</div>
+            <div class="publication">London, 1908</div>
         </div>
     </div>
 </div>
-
 
             <!-- Gallery Tab -->
-<div id="gallery" class="tab-content">
-    <h2 class="section-title">Photo Gallery</h2>
-    <p>Visual documentation of Junagadh's archaeological treasures, inscriptions, and architectural marvels.</p>
-<br>
-    <div class="gallery-title"> <h3 style="width: 100%; text-align: center; margin-bottom: 0rem;">Ashoka Rock Edicts</h3></div>
-    <div class="gallery-grid">
-        <div class="gallery-item">
-            <div class="gallery-image">
-                <img src="./Ashok rock edict/JUNAGADH -08-3577.jpg" alt="Ashoka Rock Edicts">
-            </div>
-        </div>
+            <div id="gallery" class="tab-content">
+                <h2 class="section-title">Photo Gallery</h2>
+                <p>Visual documentation of Junagadh's archaeological treasures, inscriptions, and architectural marvels.</p>
+                <br>
+                <div class="gallery-title"> <h3 style="width: 100%; text-align: center; margin-bottom: 0rem;">Ashoka Rock Edicts</h3></div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./Ashok rock edict/JUNAGADH -08-3577.jpg" alt="Ashoka Rock Edicts">
+                        </div>
+                    </div>
 
-        <div class="gallery-item">
-            <div class="gallery-image">
-                <img src="./Ashok rock edict/JUNAGADH-07-1300.JPG" alt="Ashoka Rock Edicts">
-            </div>
-        </div>
-    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./Ashok rock edict/JUNAGADH-07-1300.JPG" alt="Ashoka Rock Edicts">
+                        </div>
+                    </div>
+                </div>
 
-    <div class="gallery-title"> <h3 style="width: 100%; text-align: center; margin-bottom: 0rem;">Baba Pyara Caves</h3></div>
-    <div class="gallery-grid">
-      
+                <div class="gallery-title"> <h3 style="width: 100%; text-align: center; margin-bottom: 0rem;">Baba Pyara Caves</h3></div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./Baba pyare/JUNAGADH-06-2399.JPG" alt="Baba Pyara Caves">
+                        </div>
+                    </div>
 
-         <div class="gallery-item">
-            <div class="gallery-image">
-                <img src="./Baba pyare/JUNAGADH-06-2399.JPG" alt="Baba Pyara Caves">
-            </div>
-        </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./Baba pyare/JUNAGADH-15-829.JPG" alt="Baba Pyara Caves">
+                        </div>
+                    </div>
 
-        
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./Baba pyare/JUNAGADH-15-836.JPG" alt="Baba Pyara Caves">
+                        </div>
+                    </div>
+                </div>
 
-        <div class="gallery-item">
-            <div class="gallery-image">
-                <img src="./Baba pyare/JUNAGADH-15-829.JPG" alt="Baba Pyara Caves">
-            </div>
-        </div>
+                <div class="gallery-title"> <h3 style="width: 100%; text-align: center; margin-bottom: 0rem;">Buddhist Caves</h3></div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./Buddhist caves/JUNAGADH -08-3509.jpg" alt="Buddhist Caves">
+                        </div>
+                    </div>
 
-        <div class="gallery-item">
-            <div class="gallery-image">
-                <img src="./Baba pyare/JUNAGADH-15-836.JPG" alt="Baba Pyara Caves">
-            </div>
-        </div>
-       
-        
-    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./Buddhist caves/JUNAGADH-07-1346.JPG" alt="Buddhist Caves">
+                        </div>
+                    </div>
 
-    <div class="gallery-title"> <h3 style="width: 100%; text-align: center; margin-bottom: 0rem;">Buddhist Caves</h3></div>
-    <div class="gallery-grid">
-        <div class="gallery-item">
-            <div class="gallery-image">
-                <img src="./Buddhist caves/JUNAGADH -08-3509.jpg" alt="Buddhist Caves">
-            </div>
-        </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./Buddhist caves/JUNAGADH 14-2842.JPG" alt="Buddhist Caves">
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./Buddhist caves/JUNAGADH 14-2845.JPG" alt="Buddhist Caves">
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./Buddhist caves/JUNAGADH 14-2831.JPG" alt="Buddhist Caves">
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./Buddhist caves/JUNAGADH-15-882.JPG" alt="Buddhist Caves">
+                        </div>
+                    </div>
+                </div>
 
-        <div class="gallery-item">
-            <div class="gallery-image">
-                <img src="./Buddhist caves/JUNAGADH-07-1346.JPG" alt="Buddhist Caves">
-            </div>
-        </div>
+                <div class="gallery-title"> <h3 style="width: 100%; text-align: center; margin-bottom: 0rem;">Khapra Kodia Caves</h3></div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./Khaprakodiya caves/JUNAGADH -08-3484.jpg" alt="Khapra Kodia Caves">
+                        </div>
+                    </div>
 
-        <div class="gallery-item">
-            <div class="gallery-image">
-                <img src="./Buddhist caves/JUNAGADH 14-2842.JPG" alt="Buddhist Caves">
-            </div>
-        </div>
-         <div class="gallery-item">
-            <div class="gallery-image">
-                <img src="./Buddhist caves/JUNAGADH 14-2845.JPG" alt="Buddhist Caves">
-            </div>
-        </div>
-         <div class="gallery-item">
-            <div class="gallery-image">
-                <img src="./Buddhist caves/JUNAGADH 14-2831.JPG" alt="Buddhist Caves">
-            </div>
-        </div>
-          <div class="gallery-item">
-            <div class="gallery-image">
-                <img src="./Buddhist caves/JUNAGADH-15-882.JPG" alt="Buddhist Caves">
-            </div>
-        </div>
-    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./Khaprakodiya caves/JUNAGADH -08-3485.jpg" alt="Khapra Kodia Caves">
+                        </div>
+                    </div>
 
-    <div class="gallery-title"> <h3 style="width: 100%; text-align: center; margin-bottom: 0rem;">Khapra Kodia Caves</h3></div>
-    <div class="gallery-grid">
-        <div class="gallery-item">
-            <div class="gallery-image">
-                <img src="./Khaprakodiya caves/JUNAGADH -08-3484.jpg" alt="Khapra Kodia Caves">
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./Khaprakodiya caves/JUNAGADH-15-766.JPG" alt="Khapra Kodia Caves">
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./Khaprakodiya caves/JUNAGADH-15-770.JPG" alt="Khapra Kodia Caves">
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./Khaprakodiya caves/JUNAGADH-15-778.JPG" alt="Khapra Kodia Caves">
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="./Khaprakodiya caves/JUNAGADH-06-2391.JPG" alt="Khapra Kodia Caves">
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="gallery-item">
-            <div class="gallery-image">
-                <img src="./Khaprakodiya caves/JUNAGADH -08-3485.jpg" alt="Khapra Kodia Caves">
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <div class="gallery-image">
-                <img src="./Khaprakodiya caves/JUNAGADH-15-766.JPG" alt="Khapra Kodia Caves">
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <div class="gallery-image">
-                <img src="./Khaprakodiya caves/JUNAGADH-15-770.JPG" alt="Khapra Kodia Caves">
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <div class="gallery-image">
-                <img src="./Khaprakodiya caves/JUNAGADH-15-778.JPG" alt="Khapra Kodia Caves">
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <div class="gallery-image">
-                <img src="./Khaprakodiya caves/JUNAGADH-06-2391.JPG" alt="Khapra Kodia Caves">
-            </div>
-        </div>
-      
-    </div>
-</div>
-
-
 
             <!-- Documents Tab -->
             <div id="documents" class="tab-content">
                 <h2 class="section-title">Historical Documents & Records</h2>
                 <p>Collection of epigraphic records, archaeological reports, and administrative documents related to Junagadh's heritage.</p>
+                
+                <div class="document-grid">
+                    <div class="document-card">
+                        <h3 class="document-title">Monuments of jungadh.</h3>
+                        <button class="downloadBtn"><a href="./MONUMENTS OF JUNAGADH.pdf" download="./MONUMENTS OF JUNAGADH.pdf">Download</a></button>
+                    </div>   
+                </div>
+
+                <div class="document-grid">
+                    <div class="document-card">
+                        <h3 class="document-title">History of Junagadh.</h3>
+                        <button class="downloadBtn"><a href="./History of  junagadh.pdf" download="./History of  junagadh.pdf">Download</a></button>
+                    </div>   
+                </div>
 
                 <div class="document-grid">
                     <div class="document-card">
                         <h3 class="document-title">Junagadh complied document.</h3>
-                        <button class="downloadBtn" ><a href="./Junagadh_complied_document.pdf" download="./Junagadh_complied_document.pdf">Download</a></button>
-
+                        <button class="downloadBtn"><a href="./Junagadh_complied_document.pdf" download="./Junagadh_complied_document.pdf">Download</a></button>
                     </div>   
                 </div>
 
-                 <div class="document-grid">
-                    <div class="document-card">
-                        <h3 class="document-title">Monuments of jungadh.</h3>
-                        <button class="downloadBtn" ><a href="./monuments of jungadh.pdf" download="./monuments of jungadh.pdf">Download</a></button>
-
-                    </div>   
-                </div>
 
                 <div class="highlight-box" style="margin-top: 3rem;">
                     <strong>Note:</strong> Many of these documents are preserved in the Archaeological Survey of India archives, various museums, and university collections. Digital versions are being made available through heritage digitization projects. For academic research access, please contact the respective institutions.
@@ -366,11 +376,10 @@ These caves lie west-north-west of the second tier and include a larger central 
                 <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
             </div>
-            <p>&copy; 2024 Junagadh Heritage Documentation. A tribute to India's ancient cultural legacy.</p>
+            <p>© 2024 Archaeological Survey of India, Ministry of Culture, Government of India.</p>
         </div>
     </footer>
 
     <script src="index.js"></script>
-
 </body>
 </html>
