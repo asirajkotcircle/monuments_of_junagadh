@@ -67,11 +67,43 @@
         .header {
             background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 80%);
             color: var(--white);
-            padding: 0.5rem 0;
+            /* padding: 0.5rem 0; */
             box-shadow: var(--shadow-lg);
             position: relative;
             overflow: hidden;
             z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #logo {
+            width: 80px;
+            height: 100px;
+            
+        }
+        @media (min-width: 655px) {
+            .header {
+                flex-direction: row;
+
+
+            }
+           
+        }
+
+        @media(max-width: 655px) {
+            #logo{
+                width: 60px;
+                height: 80px;
+            }
+        }
+
+
+
+        .header-images{
+            padding-left: 2%;
+           
         }
 
 
@@ -79,7 +111,6 @@
             font-size: clamp(2rem, 5vw, 3.5rem);
             font-weight: 700;
             text-align: center;
-            margin-bottom: 0.5rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
             position: relative;
             z-index: 1;
@@ -88,7 +119,7 @@
 
         .header .subtitle {
             text-align: center;
-            font-size: clamp(1rem, 2vw, 1.3rem);
+            font-size: clamp(0.8rem, 2vw, 1.3rem);
             opacity: 0.9;
             font-style: italic;
             font-weight: 300;
@@ -324,6 +355,51 @@
   .doc-text ul {
     padding-left: 1rem;
   }
+}
+
+/* Monument Navigation */
+.monument-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    background: var(--light);
+    padding: 1rem;
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--shadow-sm);
+}
+
+.monument-btn {
+    padding: 0.7rem 1.2rem;
+    background: var(--white);
+    border: 1px solid var(--light-gray);
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.monument-btn:hover {
+    background: rgba(139, 69, 19, 0.1);
+    border-color: var(--primary-light);
+}
+
+.monument-btn.active {
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
+.monument-section {
+    display: none;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.monument-section.active {
+    display: block;
 }
 
         /* Main Content */
@@ -789,10 +865,10 @@
 .hero{
   position:relative;
   min-height:clamp(480px,70vh,820px);
-  padding:clamp(80px,12vh,140px) 0;
+  padding:clamp(20px,3vh,40px) 0;
   color:var(--white);
   display:flex;
-  align-items:center;
+  align-items:end;
   isolate:isolate;
   background:
     radial-gradient(1200px 600px at 85% 15%, rgba(212,175,55,.18) 0%, transparent 60%),
@@ -829,13 +905,13 @@
   text-align:center;
   position:relative;
   z-index:1;
-  background:linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.06));
-  border:1px solid rgba(255,255,255,.18);
-  box-shadow:0 20px 60px rgba(0,0,0,.35);
-  backdrop-filter:saturate(140%) blur(6px);
-  -webkit-backdrop-filter:saturate(140%) blur(6px);
+  /* background:linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.06)); */
+  /* border:1px solid rgba(255,255,255,.18);
+  box-shadow:0 20px 60px rgba(0,0,0,.35); */
+  /* backdrop-filter:saturate(140%) blur(6px);
+  -webkit-backdrop-filter:saturate(140%) blur(6px); */
   border-radius:24px;
-  padding:clamp(20px, 4vw, 36px) clamp(18px, 4.5vw, 44px);
+
   transform:translateY(0);
   animation:hero-float 10s ease-in-out infinite;
 }
@@ -844,9 +920,9 @@
   font-size:clamp(1.9rem, 4.5vw, 3.2rem);
   line-height:1.15;
   letter-spacing:.2px;
-  margin:0 0 .6rem;
+  color: bisque;
   text-wrap:balance;
-  text-shadow:2px 4px 20px rgba(0,0,0,.35);
+  text-shadow:2px 4px 20px rgba(255, 145, 0, 0.778);
 }
 
 .hero p{
@@ -887,24 +963,8 @@
   border-color:rgba(255,255,255,.7);
 }
 
-.hero-cue{
-  display:inline-block;
-  margin-top:1rem;
-  font-size:.8rem;
-  opacity:.85;
-  letter-spacing:.3em;
-  text-transform:uppercase;
-  position:relative;
-}
-.hero-cue::after{
-  content:"";
-  display:block;
-  width:2px; height:18px;
-  margin:8px auto 0;
-  background:currentColor;
-  border-radius:2px;
-  animation:cue 1.2s ease-in-out infinite;
-}
+
+/* Hero Animation */
 
 @keyframes hero-float{
   0%,100%{ transform:translateY(0) }
