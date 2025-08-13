@@ -169,3 +169,29 @@
       document.body.removeChild(link);
     });
   });
+
+
+  // Monument navigation functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const monumentBtns = document.querySelectorAll('.monument-btn');
+    const monumentSections = document.querySelectorAll('.monument-section');
+
+    monumentBtns.forEach(button => {
+        button.addEventListener('click', function() {
+            const targetMonument = this.getAttribute('data-monument');
+
+            // Remove active class from all buttons and sections
+            monumentBtns.forEach(btn => btn.classList.remove('active'));
+            monumentSections.forEach(section => section.classList.remove('active'));
+
+            // Add active class to clicked button and corresponding section
+            this.classList.add('active');
+            document.getElementById(`${targetMonument}-section`).classList.add('active');
+            
+            // Scroll to the top of the section
+            document.querySelector('#history').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+});
