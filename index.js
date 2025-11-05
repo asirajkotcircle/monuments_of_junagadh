@@ -195,3 +195,157 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+ // Language Selection Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const languageBtn = document.querySelector('.language-btn');
+    const languageOptions = document.querySelector('.language-options');
+    const languageOptionsList = document.querySelectorAll('.language-option');
+    
+    // Store current language (default: english)
+    let currentLanguage = 'english';
+    
+    // Toggle dropdown visibility
+    languageBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        languageOptions.classList.toggle('show');
+    });
+    
+    // Handle language selection
+    languageOptionsList.forEach(option => {
+        option.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const selectedLang = this.getAttribute('data-lang');
+            currentLanguage = selectedLang;
+            
+            // Update active state
+            languageOptionsList.forEach(opt => {
+                opt.classList.remove('active');
+                const icon = opt.querySelector('i.fa-check');
+                if (icon) icon.style.visibility = 'hidden';
+            });
+            this.classList.add('active');
+            const checkIcon = this.querySelector('i.fa-check');
+            if (checkIcon) checkIcon.style.visibility = 'visible';
+            
+            // Update button text
+            const langText = this.textContent.trim();
+            languageBtn.innerHTML = `<i class="fas fa-globe"></i> ${langText} <i class="fas fa-chevron-down"></i>`;
+            
+            // Hide dropdown
+            languageOptions.classList.remove('show');
+            
+            // Change content based on selected language
+            changeLanguage(selectedLang);
+        });
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!languageBtn.contains(e.target) && !languageOptions.contains(e.target)) {
+            languageOptions.classList.remove('show');
+        }
+    });
+    
+    // Function to change content based on language
+    function changeLanguage(lang) {
+        // Get all tabs
+        const allTabs = document.querySelectorAll('.tab-content');
+        
+        allTabs.forEach(tab => {
+            // Find language-specific content within each tab
+            const englishContent = tab.querySelectorAll('.content-english');
+            const hindiContent = tab.querySelectorAll('.content-hindi');
+            const gujaratiContent = tab.querySelectorAll('.content-gujarati');
+            
+            // Hide all language content
+            englishContent.forEach(el => el.style.display = 'none');
+            hindiContent.forEach(el => el.style.display = 'none');
+            gujaratiContent.forEach(el => el.style.display = 'none');
+            
+            // Show selected language content
+            let selectedContent;
+            if (lang === 'english') selectedContent = englishContent;
+            else if (lang === 'hindi') selectedContent = hindiContent;
+            else if (lang === 'gujarati') selectedContent = gujaratiContent;
+            
+            if (selectedContent) {
+                selectedContent.forEach(content => {
+                    const computedDisplay = window.getComputedStyle(content).display;
+                    if (computedDisplay === 'flex' || content.classList.contains('flex')) {
+                        content.style.display = 'flex';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                });
+            }
+        });
+        // --- Update monument navigation labels according to language ---
+const monumentNames = {
+    english: {
+        overview: "Overview",
+        ashoka: "Ashoka Rock Edicts",
+        "baba-pyara": "Baba Pyara Caves",
+        "khapra-kodia": "Khapra Kodia Caves",
+        buddhist: "Buddhist Caves"
+    },
+    hindi: {
+        overview: "परिचय",
+        ashoka: "अशोक शिलालेख",
+        "baba-pyara": "बाबा प्यारा गुफाएँ",
+        "khapra-kodia": "खपरा कोडिया गुफाएँ",
+        buddhist: "बौद्ध गुफाएँ"
+    },
+    gujarati: {
+        overview: "સારાંશ",
+        ashoka: "અશોકના શિલાલેખ",
+        "baba-pyara": "બાબા પ્યારાની ગુફાઓ",
+        "khapra-kodia": "ખાપરા કોડિયા ગુફાઓ",
+        buddhist: "બૌદ્ધ ગુફાઓ"
+    }
+};
+
+// Update all monument button labels
+const monumentBtns = document.querySelectorAll('.monument-btn');
+monumentBtns.forEach(btn => {
+    const key = btn.getAttribute('data-monument');
+    if (monumentNames[lang][key]) {
+        btn.textContent = monumentNames[lang][key];
+    }
+});
+
+    }
+    
+    // Observer to reapply language when tab changes
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.attributeName === 'class' || mutation.attributeName === 'style') {
+                // Reapply current language to visible tab
+                changeLanguage(currentLanguage);
+            }
+        });
+    });
+    
+    // Observe tab content changes
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(tabContent => {
+        observer.observe(tabContent, {
+            attributes: true,
+            attributeFilter: ['class', 'style']
+        });
+    });
+    
+    // Also listen for tab clicks to reapply language
+    const tabButtons = document.querySelectorAll('[data-tab], .tab-btn, .nav-link');
+    tabButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Small delay to ensure tab content is loaded
+            setTimeout(() => {
+                changeLanguage(currentLanguage);
+            }, 50);
+        });
+    });
+    
+    // Initialize with English content
+    changeLanguage('english');
+});
