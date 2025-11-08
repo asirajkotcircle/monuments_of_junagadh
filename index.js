@@ -293,7 +293,7 @@ const monumentNames = {
         overview: "परिचय",
         ashoka: "अशोक शिलालेख",
         "baba-pyara": "बाबा प्यारा गुफाएँ",
-        "khapra-kodia": "खपरा कोडिया गुफाएँ",
+        "khapra-kodia": "खापरा  कोडिया गुफाएँ",
         buddhist: "बौद्ध गुफाएँ"
     },
     gujarati: {
