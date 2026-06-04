@@ -349,3 +349,13 @@ monumentBtns.forEach(btn => {
     // Initialize with English content
     changeLanguage('english');
 });
+// --- Switch video based on language ---
+const videos = {
+    english: document.getElementById('video-english'),
+    hindi:   document.getElementById('video-hindi'),
+    gujarati: document.getElementById('video-gujarati')
+};
+
+Object.entries(videos).forEach(([key, el]) => {
+    if (el) el.style.display = (key === lang) ? 'block' : 'none';
+});
